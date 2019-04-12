@@ -12,7 +12,14 @@ public class MyDaemon {
     public static void main(String[] args)  {
         while(true)
         {
-            System.out.println("dddddddddddddd");
+            System.out.println("this is a test jar.");
+            try {
+                Thread.sleep(1000);
+                System.out.print("    线程睡眠1秒！\n");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
+~ 
