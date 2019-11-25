@@ -23,7 +23,7 @@ pipeline {
 
         stage('mvn') {
           steps {
-            sh 'mvn'
+            sh 'mvn compile&&mvn package'
           }
         }
 
